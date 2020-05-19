@@ -1,0 +1,164 @@
+# ScriptBlockPlus v1.9.3 Lang #
+# MCBBS PCD小组 秋风残叶 搬运并汉化 请支持原作者 yuttyann44581
+# 本配置源语言为日本语，可能存在翻译不准确的地方
+
+
+## ===== Commands ===== ##
+# 沒有佔位符
+ToolCommandMessage: 'tool - 獲得腳本編輯工具'
+ReloadCommandMessage: 'reload - 重載插件'
+BackupCommandMessage: 'backup - 備份腳本數據'
+CheckVerCommandMessage: 'checkver - 查詢最新版本'
+DataMigrCommandMessage: 'datamigr - 將ScriptBlock的舊數據轉移至ScriptBlockPlus'
+ExportCommandMessage: 'export <sound | material> - 將BukkitAPI聲音和材質輸出為文本'
+CreateCommandMessage: '<交互方式> create <腳本內容> - 創建腳本方塊'
+AddCommandMessage: '<交互方式> add <腳本內容> - 添加腳本方塊'
+RemoveCommandMessage: '<交互方式> remove - 移除腳本方塊'
+ViewCommandMessage: '<交互方式> view - 查看方塊的腳本'
+RunCommandMessage: '<交互方式> run <世界名> <x> <y> <z> - 執行指定的腳本'
+SelectorPasteCommandMessage: 'selector paste <pasteonair> [overwrite] - 貼上選區內的腳本方塊'
+SelectorRemoveCommandMessage: 'selector remove - 移除選區內的腳本方塊'
+
+# &(code) : 可以使用彩色代码
+
+## ===== BlockSelector ===== ##
+# 沒有佔位符
+BlockSelector:
+- '&a這是一個可以選擇方塊區域的工具'
+- '&6左鍵點擊: &e選擇區域的起點'
+- '&6右鍵點擊: &e選擇區域的結束點'
+- '&6Shift+左鍵點擊: &e將當前位置設置為區域的起點'
+- '&6Shift+右鍵點擊: &e將當前位置設置為區域的結束點'
+
+## ===== ScriptEditor ===== ##
+# %scripttype% : 腳本種類
+ScriptEditor:
+- '&a這是一個可以復制並貼上腳本的工具'
+- '&6左鍵點擊: &e更改選擇模式'
+- '&6右鍵點擊: &e複製腳本'
+- '&6Shift+左鍵點擊: &e刪除腳本'
+- '&6Shift+右鍵點擊: &e貼上腳本'
+
+## ===== ScriptViewer ===== ##
+# %scripttype% : 腳本種類
+ScriptViewer:
+- '&a該工具支持腳本檢查。'
+- '&6左键點击: &e開始搜索周圍的腳本。'
+- '&6右键點击: &e停止搜索周圍的腳本。'
+
+# |~ \n : 改行
+
+## ===== Messages ===== ##
+# 沒有佔位符
+NotVaultMessage: '&cVault經濟插件前置未找到'
+SenderNoPlayerMessage: '&c控制台不能這麼做'
+NotPermissionMessage: '&c你沒有權限'
+GiveToolMessage: '&a獲得選擇工具'
+AllFileReloadMessage: '&a插件成功重載，漢化 by 蝦嘎啦嘎'
+ScriptsBackupMessage: '&a腳本數據備份已完成。 '
+ErrorScriptsBackupMessage: '&c腳本數據備份失敗。 '
+NotLatestPluginMessage: '&c已是最新版本'
+NotScriptBlockFileMessage: '&cScriptBlock無數據或者數據損壞'
+DataMigrStartMessage: '&7開始從ScriptBlock轉移數據....'
+DataMigrEndMessage: '&b數據轉移完畢'
+UpdateDownloadStartMessage: '&6開始下載最新版本ScriptBlockPlus...如果發生卡頓 請不要啟用自動更新'
+
+# %name% : 班級名稱(Sound, Material)
+ExportStartMessage: '&7將BukkitAPI的"%name%"輸出到文本....'
+ExportEndMessage: '&bBukkitAPI"%name%"輸出完成。 '
+
+# %filename% : 文件名
+# %filepath% : 文件路徑
+# %filesize% : 文件大小
+UpdateDownloadEndMessage: '&6新更新下載完成|~文件名: %filename%|~文件大小: %filesize%|~文件路徑: %filepath%'
+
+# %pluginname%    : 插件名
+# %latestversion% : 最新版本
+# %details%       : 更新内容
+UpdateCheckMessage: '&b新版本插件可用|~v%latestversion% 最新版本|~插件名: %pluginname%|~☆更新內容☆|~%details%'
+
+# 沒有佔位符
+ErrorUpdateMessage: '&c查詢更新失敗，可能是國內網絡導致的，建議去這個中文搬運帖查看更新http://www.mcbbs.net/thread-691900-1-1.html'
+
+# %scripttype% : 腳本種類
+ScriptCopyMessage: '&a複製一個種類是"%scripttype%"的腳本'
+ScriptPasteMessage: '&a貼上一個種類是"%scripttype%"的腳本'
+ScriptCreateMessage: '&a創建一個種類是"%scripttype%"的腳本'
+ScriptAddMessage: '&a添加一個種類是"%scripttype%"的腳本'
+ScriptRemoveMessage: '&c刪除一個種類是"%scripttype%"的腳本'
+
+# 沒有佔位符
+NotSelectionMessage: '&cBlockSelector坐標範圍未選擇'
+
+# 沒有佔位符
+ScriptViewerStartMessage: '&a開始搜索周圍的腳本。 '
+ScriptViewerStopMessage: '&c對周圍腳本的搜索已停止。 '
+
+# %world% : 世界名
+# %coords% : 坐標(x, y, z)
+SelectorPos1Message: '&b已選擇起點"%coords%"'
+SelectorPos2Message: '&b已選擇終點"%coords%"'
+
+# %scripttype% : 腳本種類
+# %blockcount% : 塊數
+SelectorPasteMessage: '&a腳本種類"%scripttype%"已通過BlockSelector進行貼上'
+SelectorRemoveMessage: '&c腳本種類"%scripttype%"已通過BlockSelector移除'
+
+# %option% : 腳本名稱
+# %cause% : 錯誤發生原因
+OptionFailedToExecuteMessage: '&c腳本"%option%"執行失敗|~&c可能的原因: %cause%'
+
+# 沒有佔位符
+ActiveDelayMessage: '&c該腳本在延遲中 你暫時不能使用'
+
+# %hour% : 時
+# %minute% : 分
+# %second% : 秒
+ActiveCooldownMessage: '&c腳本還在冷卻中 [%hour%時%minute%分%second%秒]'
+
+# %clicktype% : 點擊種類
+SuccActionDataMessage: '&a腳本種類"%clicktype%"的設定已選定。請點擊需要生效的方塊'
+
+# 沒有佔位符
+ErrorActionDataMessage: '&c設定出現錯誤'
+ErrorScriptCheckMessage: '&c腳本輸入錯誤！ '
+ErrorScriptFileCheckMessage: '&c無腳本'
+
+# %scripttype% : 腳本種類
+ErrorScriptExecMessage: '&c腳本種類"%scripttype%"執行失敗'
+
+# %group% : 權限組名
+ErrorGroupMessage: '&c只有屬於權限組"%group%"的玩家才可以運行該腳本'
+
+# %material% : 物品種類
+# %amount% : 物品的數量
+# %damage% : 物品的子ID
+# %itemname% : 物品的名稱
+ErrorHandMessage: '&c您的手持物品不滿足條件，所需物品必須滿足"%itemname%(%material%:%damage%)"以及數量"%amount%個"'
+ErrorItemMessage: '&c您的背包內物品不滿足條件，所需物品必須滿足"%itemname%(%material%:%damage%)"以及數量"%amount%個"'
+
+# %cost% : 需要支付的金額
+# %result% : 至少應該剩餘的金錢
+ErrorCostMessage: '&c你的金錢至少應該有"%result%"，執行這個腳本需要花費金錢"%cost%"'
+
+# %scripttype% : 腳本種類
+# %player% : 玩家ID
+# %world% : 世界名
+# %coords% : 坐標(x, y, z)
+ConsoleScriptCopyMessage: '&a創建者"%player%"、腳本種類"%scripttype%"、位置"%world%, %coords%"腳本已被複製'
+ConsoleScriptPasteMessage: '&a創建者"%player%"、腳本種類"%scripttype%"、位置"%world%, %coords%"腳本已被貼上'
+ConsoleScriptCreateMessage: '&a創建者"%player%"、腳本種類"%scripttype%"、位置"%world%, %coords%"腳本已被創建'
+ConsoleScriptAddMessage: '&a更新者"%player%"、腳本種類"%scripttype%"、位置"%world%, %coords%"腳本已被添加'
+ConsoleScriptRemoveMessage: '&c刪除者"%player%"、腳本種類"%scripttype%"、位置"%world%, %coords%"腳本已被刪除'
+ConsoleScriptViewMessage: '&a執行者"%player%"、腳本種類"%scripttype%"、位置"%world%, %coords%"腳本正在被預覽'
+ConsoleSuccScriptExecMessage: '&a執行者"%player%"、腳本種類"%scripttype%"、位置"%world%, %coords%"腳本被觸發了'
+ConsoleErrorScriptExecMessage: '&c執行者"%player%"、腳本種類"%scripttype%"、位置"%world%, %coords%"腳本觸發失敗'
+
+# %scripttype% : 腳本種類
+# %blockcount% : 方塊數量
+# %player% : 玩家ID
+# %world% : 世界名
+# %mincoords% : 最小位置(x, y, z)
+# %maxcoords% : 最大位置(x, y, z)
+ConsoleSelectorPasteMessage: '&a腳本種類"%scripttype%"位置範圍Min"%world%, %mincoords%", Max"%world%, %maxcoords%"已完成貼上'
+ConsoleSelectorRemoveMessage: '&c腳本種類"%scripttype%"位置範圍Min"%world%, %mincoords%", Max"%world%, %maxcoords%"已被刪除'
